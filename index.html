@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dijital Tarih Hafızası | Digital History Memory</title>
+    
+    <link rel="icon" href="data:,">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 relative selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- YÜKLENİYOR EKRANI -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-4 transition-opacity duration-300">
+        <div class="w-12 h-12 border-4 border-amber-500/20 border-t-amber-500 rounded-full animate-spin"></div>
+        <p id="uiLoadingText" class="text-sm font-semibold text-slate-300 animate-pulse tracking-wide">Tarihi Arşiv Yükleniyor...</p>
+    </div>
+
+    <!-- HATA BİLDİRİMİ -->
+    <div id="errorToast" class="fixed top-20 left-1/2 -translate-x-1/2 z-50 hidden bg-red-950/95 border border-red-500/50 text-red-200 px-5 py-3.5 rounded-xl shadow-2xl backdrop-blur-md flex items-center gap-3 max-w-md w-[90%] transition-all">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        <span id="errorToastText" class="text-xs font-semibold leading-relaxed">Bağlantı sorunu oluştu.</span>
+        <button onclick="document.getElementById('errorToast').classList.add('hidden')" class="ml-auto text-red-400 hover:text-white p-1 font-bold">&times;</button>
+    </div>
+
+    <!-- YÖNETİCİ MODU BİLGİ BARI -->
+    <div id="adminStatusBar" class="fixed top-0 left-0 right-0 bg-amber-500 text-slate-950 px-4 py-1.5 z-40 hidden flex items-center justify-between text-xs font-bold shadow-lg">
+        <div class="flex items-center gap-2">
+            <span class="animate-pulse">🔴</span>
+            <span>YÖNETİCİ MODU AKTİF — Harita üzerinde nokta eklemek istediğiniz konuma tıklayın. (Pimlere tıklayarak silebilirsiniz)</span>
+        </div>
+        <div class="flex items-center gap-2">
+            <button onclick="exportEventsJSON()" class="bg-slate-950 text-amber-400 hover:bg-slate-900 px-2.5 py-1 rounded border border-slate-800 transition">💾 Güncel JSON İndir</button>
+            <button onclick="logoutAdmin()" class="bg-red-600 text-white hover:bg-red-700 px-2.5 py-1 rounded transition">Çıkış Yap</button>
+        </div>
+    </div>
+
+
+    <!-- ÜST YÖNETİM VE KOMPAKT FİLTRE DOCK -->
+<header class="absolute top-3 left-3 right-3 md:top-5 md:left-6 md:right-6 z-20 pointer-events-none flex flex-col gap-2 transition-all duration-300" id="mainHeader">
+    
+    <!-- 1. SATIR: ANA BAŞLIK VE KONTROL BUTONLARI -->
+    <div class="flex items-center justify-between gap-2 pointer-events-auto">
+        <!-- Kompakt Başlık (Mobil ekranda alt başlık gizlenir) -->
+        <div class="bg-slate-950/80 hover:bg-slate-950/95 backdrop-blur-xl border border-slate-800/80 px-3 py-1.5 md:py-2 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.6)] flex items-center gap-2 group select-none shrink-0">
+            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-amber-500 shadow-[0_0_8px_#f59e0b] group-hover:scale-110 transition-transform shrink-0"></div>
+            <div class="flex flex-col">
+                <h1 id="uiAppTitle" class="text-xs md:text-sm font-extrabold tracking-tight text-white leading-none">Dijital Tarih Hafızası</h1>
+                <p id="uiAppSubtitle" class="hidden md:block text-[10px] text-slate-400 mt-0.5 tracking-wide leading-none">Türkiye Etkileşimli Tarih Haritası</p>
+            </div>
+        </div>
+
+        <!-- Sağ Kontrol Menüsü (Şehirler, Dil, Yönetici) -->
+        <div class="bg-slate-950/80 backdrop-blur-xl border border-slate-800/80 p-1 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.6)] flex items-center gap-1 shrink-0">
+            <button onclick="openCityModal()" title="Şehirlere Göre Filtrele" class="bg-slate-900/90 hover:bg-amber-500/10 text-slate-200 hover:text-amber-400 px-2.5 py-1 md:px-3.5 md:py-1.5 rounded-lg border border-transparent hover:border-amber-500/30 transition-all text-[11px] md:text-xs font-bold flex items-center gap-1 active:scale-95">
+                <span>🏙️</span> 
+                <span id="uiCityBtnText" class="hidden sm:inline">Şehirler</span>
+            </button>
+            <div class="h-4 w-[1px] bg-slate-800 mx-0.5"></div>
+            <div class="flex items-center bg-slate-900/90 p-0.5 rounded-lg border border-slate-800/60">
+                <button onclick="setLanguage('tr')" id="btnLangTR" class="px-2 py-0.5 text-[10px] font-extrabold rounded transition-all bg-amber-500 text-slate-950">TR</button>
+                <button onclick="setLanguage('en')" id="btnLangEN" class="px-2 py-0.5 text-[10px] font-extrabold rounded transition-all text-slate-400 hover:text-white">EN</button>
+            </div>
+            <div class="h-4 w-[1px] bg-slate-800 mx-0.5"></div>
+            <button onclick="openLoginModal()" title="Yönetici Girişi" class="w-7 h-7 rounded-lg bg-slate-900/90 hover:bg-amber-500/20 text-slate-400 hover:text-amber-400 transition-all flex items-center justify-center text-xs active:scale-90">
+                🔑
+            </button>
+        </div>
+    </div>
+
+    <!-- 2. SATIR: YATAY KAYDIRILABİLİR KOMPAKT KATEGORİ BAR -->
+    <div class="pointer-events-auto self-start max-w-full overflow-x-auto no-scrollbar">
+        <div class="bg-slate-950/80 backdrop-blur-xl border border-slate-800/80 p-1 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.6)] flex items-center gap-1 text-[11px] font-bold whitespace-nowrap w-max">
+            <button onclick="setCategoryFilter('all')" id="btnCat_all" class="px-2.5 py-1 rounded-lg bg-amber-500 text-slate-950 shadow-sm transition">Tümü</button>
+            <button onclick="setCategoryFilter('event')" id="btnCat_event" class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white transition flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-red-500 shrink-0"></span>Olaylar</button>
+            <button onclick="setCategoryFilter('museum')" id="btnCat_museum" class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white transition flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>Müzeler</button>
+            <button onclick="setCategoryFilter('monument')" id="btnCat_monument" class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white transition flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-blue-500 shrink-0"></span>Anıt & Cephe</button>
+        </div>
+    </div>
+
+</header>
+
+    <!-- AKTİF ŞEHİR FİLTRESİ ÇİPİ -->
+    <div id="activeCityFilterBar" class="hidden fixed top-24 left-1/2 -translate-x-1/2 z-20 bg-amber-500/15 border border-amber-500/40 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-2xl pointer-events-auto flex items-center justify-between gap-3 text-xs text-amber-300 font-semibold transition-all">
+        <span id="activeCityFilterText" class="flex items-center gap-1.5">📍 Filtre: Ankara (3 Olay)</span>
+        <button onclick="resetCityFilter()" class="hover:text-white font-bold bg-amber-950/60 hover:bg-amber-900/80 px-2 py-0.5 rounded-full border border-amber-500/30 transition text-[10px] uppercase tracking-wider">✕ Kaldır</button>
+    </div>
+
+    <!-- ANASAYFA BANNER -->
+    <div id="adBanner" class="fixed bottom-4 left-4 right-4 md:right-auto md:w-[420px] bg-slate-900/95 border border-slate-800 backdrop-blur-md p-3 rounded-xl shadow-2xl z-20 flex items-center justify-between gap-3 transition-all duration-300">
+        <div class="flex items-center gap-2.5 overflow-hidden">
+            <span id="uiBannerTag" class="bg-amber-500/20 text-amber-400 border border-amber-500/30 text-[9px] font-extrabold px-1.5 py-0.5 rounded shrink-0 uppercase tracking-wider">Sponsor</span>
+            <p id="uiBannerText" class="text-xs text-slate-300 truncate font-medium">Tarih kitaplarında %50'ye varan indirimleri keşfedin!</p>
+        </div>
+        <div class="flex items-center gap-1 shrink-0">
+            <a id="uiBannerBtn" href="#" target="_blank" class="text-[11px] font-bold text-amber-400 hover:text-amber-300 px-2 py-1 bg-amber-950/50 rounded border border-amber-800/50 transition">İncele</a>
+            <button onclick="document.getElementById('adBanner').remove()" class="text-slate-500 hover:text-white p-1 rounded hover:bg-slate-800 transition">&times;</button>
+        </div>
+    </div>
+
+    <!-- HARİTA KANVASI -->
+    <main id="map"></main>
+
+    <!-- ŞEHİRLER VE OLAYLAR FİHRİSTİ MODALI -->
+    <div id="cityIndexModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl max-w-lg w-full max-h-[80vh] flex flex-col shadow-2xl">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3 shrink-0">
+                <h3 id="uiCityModalTitle" class="font-bold text-white text-base flex items-center gap-2"><span>🏙️</span> Şehirlere Göre Tarihi Hafıza</h3>
+                <button onclick="closeCityModal()" class="text-slate-500 hover:text-white p-1 text-lg font-bold">&times;</button>
+            </div>
+            <p id="uiCityModalSub" class="text-xs text-slate-400 my-3 shrink-0">Keşfetmek istediğiniz şehri seçerek ilgili tarihi noktalara doğrudan odaklanın:</p>
+            <div id="cityListContainer" class="overflow-y-auto space-y-2 pr-1 flex-1"></div>
+            <div class="border-t border-slate-800 pt-3 mt-4 shrink-0">
+                <button onclick="resetCityFilter(); closeCityModal();" id="uiShowAllBtn" class="w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold rounded-xl transition uppercase tracking-wider">🌍 Tüm Şehirleri ve Noktaları Göster</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- YÖNETİCİ GİRİŞ MODALI -->
+    <div id="adminLoginModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl max-w-sm w-full shadow-2xl space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h3 class="font-bold text-white text-sm flex items-center gap-2"><span>🛡️</span> Yönetici Girişi</h3>
+                <button onclick="closeLoginModal()" class="text-slate-500 hover:text-white">&times;</button>
+            </div>
+            <div class="space-y-3">
+                <div>
+                    <label class="text-[11px] font-semibold text-slate-400 uppercase">Şifre</label>
+                    <input type="password" id="adminPasswordInput" placeholder="••••••••" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500 mt-1">
+                </div>
+                <p id="loginErrorText" class="text-xs text-red-400 hidden">Hatalı şifre girdiniz.</p>
+                <button onclick="attemptLogin()" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2 rounded-lg text-xs tracking-wider uppercase transition">Giriş Yap</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- YENİ NOKTA EKLEME PANELİ (YÖNETİCİ MODU) -->
+    <aside id="adminFormPanel" class="fixed top-0 right-0 w-full md:w-[500px] h-full translate-x-full bg-slate-950/95 border-l border-amber-500/30 backdrop-blur-2xl z-50 transition-transform duration-300 flex flex-col shadow-2xl overflow-hidden">
+        <div class="px-6 py-4 border-b border-slate-900 flex items-center justify-between bg-amber-500/10 shrink-0">
+            <span class="text-xs font-bold uppercase tracking-widest text-amber-400 flex items-center gap-2"><span>📍</span> Yeni Tarihi Nokta Ekle</span>
+            <button onclick="closeAdminForm()" class="text-slate-400 hover:text-white p-1 rounded-lg">&times;</button>
+        </div>
+        
+        <form id="addEventForm" onsubmit="saveNewEvent(event)" class="p-6 overflow-y-auto flex-1 space-y-4 text-xs font-medium">
+            <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 flex justify-between items-center text-amber-400 font-mono text-[11px]">
+                <span>Seçilen Koordinat:</span>
+                <span id="displayCoords">0.000, 0.000</span>
+            </div>
+
+            <!-- KATEGORİ / TİP SEÇİMİ (YENİ EKLENDİ) -->
+            <div class="bg-slate-900 p-3 rounded-xl border border-amber-500/30">
+                <label class="text-amber-400 block mb-1.5 font-bold uppercase tracking-wider">Kategori / Nokta Tipi</label>
+                <select id="admType" required class="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-white font-bold focus:border-amber-500 outline-none">
+                    <option value="event">🔴 Tarihi Olay / Kırılma Noktası</option>
+                    <option value="museum">🟢 Tarihi Müze / Arşiv / Ören Yeri</option>
+                    <option value="monument">🔵 Anıt / Şehitlik / Cephe Hattı / Kale</option>
+                </select>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+                <div>
+                    <label class="text-slate-400 block mb-1">Tarih / Yıl / Yüzyıl</label>
+                    <input type="text" id="admDate" required placeholder="Örn: 1923 veya MÖ 500" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none">
+                </div>
+                <div>
+                    <label class="text-slate-400 block mb-1">Görsel URL (jpg, png)</label>
+                    <input type="url" id="admImage" required placeholder="https://..." class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none">
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800/80 pt-3">
+                <span class="text-amber-500 font-bold block mb-2">TÜRKÇE İÇERİK (TR)</span>
+                <div class="space-y-3">
+                    <input type="text" id="admTitleTR" required placeholder="Başlık (TR)" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none">
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="text" id="admCityTR" required placeholder="İl/Şehir (Örn: Aydın)" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none font-bold text-amber-400">
+                        <input type="text" id="admLocTR" required placeholder="İlçe/Mekan (Örn: Söke)" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none">
+                    </div>
+                    <textarea id="admSumTR" required rows="2" placeholder="Kısa Özet (TR)" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none"></textarea>
+                    <textarea id="admFullTR" required rows="4" placeholder="Detaylı Anlatım / Bilgi (TR)" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none"></textarea>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800/80 pt-3">
+                <span class="text-amber-500 font-bold block mb-2">İNGİLİZCE İÇERİK (EN)</span>
+                <div class="space-y-3">
+                    <input type="text" id="admTitleEN" required placeholder="Title (EN)" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none">
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="text" id="admCityEN" required placeholder="City (e.g. Aydın)" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none font-bold text-amber-400">
+                        <input type="text" id="admLocEN" required placeholder="District/Place (e.g. Söke)" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none">
+                    </div>
+                    <textarea id="admSumEN" required rows="2" placeholder="Short Summary (EN)" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none"></textarea>
+                    <textarea id="admFullEN" required rows="4" placeholder="Detailed Narration / Info (EN)" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-amber-500 outline-none"></textarea>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800/80 pt-3 grid grid-cols-2 gap-3">
+                <div>
+                    <label class="text-slate-400 block mb-1">Ses Arşivi URL (Opsiyonel)</label>
+                    <input type="url" id="admAudio" placeholder="https://...mp3" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2 text-white focus:border-amber-500 outline-none">
+                </div>
+                <div class="flex items-center gap-2 pt-5">
+                    <input type="checkbox" id="admSponsor" class="w-4 h-4 accent-amber-500 rounded">
+                    <label for="admSponsor" class="text-slate-300 select-none">Sponsorlu Nokta</label>
+                </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-900 flex gap-3">
+                <button type="button" onclick="closeAdminForm()" class="w-1/3 py-3 bg-slate-900 hover:bg-slate-800 text-slate-400 rounded-xl font-bold uppercase tracking-wider transition">İptal</button>
+                <button type="submit" class="w-2/3 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold rounded-xl uppercase tracking-wider transition shadow-lg shadow-amber-500/20">Noktayı Kaydet</button>
+            </div>
+        </form>
+    </aside>
+
+    <!-- TARİHSEL VE MEKAN DETAY PANELİ -->
+    <aside id="historyPanel" class="fixed bottom-0 md:bottom-auto md:top-0 right-0 left-0 md:left-auto w-full md:w-[460px] h-[85dvh] md:h-full translate-y-full md:translate-y-0 md:translate-x-full rounded-t-3xl md:rounded-t-none border-t md:border-t-0 md:border-l border-amber-500/20 bg-slate-950/95 backdrop-blur-xl z-50 transition-all duration-300 ease-in-out flex flex-col shadow-[0_-10px_30px_rgba(0,0,0,0.8)] md:shadow-[-10px_0_30px_rgba(0,0,0,0.8)] overflow-hidden">
+        <div class="w-12 h-1 bg-slate-800 rounded-full mx-auto my-3 md:hidden shrink-0"></div>
+        <div class="px-6 py-4 border-b border-slate-900 flex items-center justify-between bg-slate-950/50 shrink-0">
+            <span id="uiPanelCategory" class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-950/40 px-3 py-1 rounded-md border border-amber-500/20">Tarihi Hafıza</span>
+            <button onclick="closePanel()" class="text-slate-400 hover:text-amber-400 p-1.5 rounded-lg hover:bg-slate-900 transition-all duration-200">&times;</button>
+        </div>
+        <div id="panelContentWrapper" class="p-6 overflow-y-auto flex-1 space-y-6 transition-opacity duration-200 opacity-100">
+            <div class="relative rounded-2xl overflow-hidden aspect-video bg-slate-900 border border-slate-800/80 shadow-2xl group">
+                <img id="panelImage" src="" alt="Dönem Görseli" class="w-full h-full object-cover grayscale contrast-125 transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                <div id="uiSponsorBadge" class="hidden absolute top-3 right-3 bg-amber-500 text-slate-950 text-[10px] font-black px-2.5 py-1 rounded-md shadow-lg tracking-wider">SPONSORLU</div>
+            </div>
+            <div class="flex flex-wrap items-center gap-3">
+                <div class="flex items-center gap-1.5 bg-amber-950/30 text-amber-400 border border-amber-500/20 px-2.5 py-1 rounded-md text-xs font-semibold">
+                    <span>📅</span> <span id="panelDate"></span>
+                </div>
+                <span class="text-slate-600">•</span>
+                <div class="text-slate-400 text-xs font-medium flex items-center gap-1">
+                    <span>📍</span> <span id="panelLocation"></span>
+                </div>
+            </div>
+            <h2 id="panelTitle" class="text-2xl font-bold tracking-tight text-white leading-tight font-serif-custom decoration-amber-500/30 decoration-2 underline-offset-4"></h2>
+            <div id="audioContainer" class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl space-y-2">
+                <div class="flex items-center justify-between">
+                    <span id="uiAudioTitle" class="text-xs font-bold text-amber-500 tracking-wider uppercase">Sesli Anlatım</span>
+                    <span id="uiAudioSub" class="text-[10px] text-slate-500 font-mono">Dönem Ses Arşivi</span>
+                </div>
+                <audio id="panelAudio" controls class="w-full h-8 rounded bg-slate-950 focus:outline-none accent-amber-500"><source src="" type="audio/mpeg"></audio>
+            </div>
+            <div class="space-y-5 text-sm leading-relaxed text-slate-300 font-sans">
+                <p id="panelSummary" class="font-medium text-slate-200 border-l-2 border-amber-500 pl-4 py-1.5 bg-amber-950/10 rounded-r-md italic"></p>
+                <div class="my-4 bg-slate-900/40 border border-dashed border-slate-800 rounded-xl p-3 text-center overflow-hidden">
+                    <div id="uiAdsenseTitle" class="text-[9px] font-mono uppercase tracking-widest text-slate-500 mb-1.5">Sponsorlu Bağlantı • 300x250</div>
+                    <div class="w-full h-36 bg-slate-950/60 rounded-lg flex flex-col items-center justify-center border border-slate-800/50 text-slate-600">
+                        <span class="text-xs font-semibold">Google AdSense</span>
+                        <span id="uiAdsenseSub" class="text-[10px] text-slate-700">Responsive Reklam Alanı</span>
+                    </div>
+                </div>
+                <p id="panelFullText" class="text-slate-400 font-light text-justify leading-relaxed"></p>
+            </div>
+            <div id="nativeSponsorCard" class="hidden pt-5 mt-6 border-t border-slate-800/80">
+                <div class="bg-gradient-to-br from-amber-950/20 via-slate-900/60 to-slate-900/40 border border-amber-500/20 rounded-xl p-4 flex items-center justify-between gap-4 shadow-lg">
+                    <div class="space-y-1">
+                        <span id="uiNativeSponsorTag" class="text-[9px] font-extrabold uppercase tracking-widest text-amber-500 block">Tarihi Destekçi</span>
+                        <p class="text-xs text-slate-300"><span id="uiNativeSponsorText">Bu tarihi hafıza</span> <strong id="sponsorNameText" class="text-white font-semibold"></strong> <span id="uiNativeSponsorSub">katkılarıyla dijitalleştirilmiştir.</span></p>
+                    </div>
+                    <a id="sponsorLink" href="#" target="_blank" rel="noopener noreferrer" class="shrink-0 block bg-slate-950/50 p-2 rounded-lg border border-slate-800"><img id="sponsorLogoImg" src="" alt="Sponsor" class="h-7 max-w-[80px] object-contain"></a>
+                </div>
+            </div>
+
+            <!-- YÖNETİCİ SİLME KONTROL ALANI -->
+            <div id="adminDeleteBox" class="hidden pt-5 mt-6 border-t border-red-500/30">
+                <button onclick="deleteCurrentMarker()" class="w-full py-3 bg-red-950/80 hover:bg-red-900 text-red-300 hover:text-white font-extrabold rounded-xl border border-red-600/50 transition flex items-center justify-center gap-2 text-xs uppercase tracking-wider shadow-lg">
+                    <span>🗑️</span> Bu Noktayı Haritadan ve Hafızadan Sil
+                </button>
+            </div>
+        </div>
+        <div class="p-4 border-t border-slate-900 bg-slate-950/80 shrink-0">
+            <button onclick="closePanel()" id="uiBackToMapBtn" class="w-full py-3 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-slate-300 hover:text-white text-xs font-bold tracking-widest uppercase rounded-xl transition border border-slate-800">Haritaya Geri Dön</button>
+        </div>
+    </aside>
+
+    <!-- HARİCİ MODÜLER JAVASCRIPT DOSYALARI -->
+    <script src="app.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

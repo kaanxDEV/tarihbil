@@ -1,0 +1,945 @@
+[
+  {
+    "id": "evt-001",
+    "title": {
+      "tr": "18 Mart Çanakkale Deniz Zaferi",
+      "en": "March 18 Canakkale Naval Victory"
+    },
+    "date": "18-03-1915",
+    "locationName": {
+      "tr": "Çanakkale Boğazı",
+      "en": "Dardanelles Strait, Turkey"
+    },
+    "coordinates": [40.1467, 26.4086],
+    "summary": {
+      "tr": "İtilaf Devletleri donanmasının Çanakkale Boğazı'nı geçme girişiminin başarısızlıkla sonuçlandığı tarihi deniz zaferi.",
+      "en": "The historic naval victory where the Allied fleet's attempt to force through the Dardanelles Strait failed."
+    },
+    "fullText": {
+      "tr": "İtilaf donanmasının İstanbul'a ulaşma hedefi, Nusret Mayın Gemisi'nin stratejik hamlesi ve kıyı topçularının direnişiyle engellendi. Bu zafer, savaşın seyrini değiştirerek Çarlık Rusyası'nın çöküşünü hızlandırdı.",
+      "en": "The Allied objective to reach Istanbul was thwarted by the strategic deployment of the minelayer Nusret and fierce coastal artillery resistance. This victory altered the course of the war and accelerated the collapse of Tsarist Russia."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-002",
+    "title": {
+      "tr": "Malazgirt Meydan Muharebesi",
+      "en": "Battle of Manzikert"
+    },
+    "date": "26-08-1071",
+    "locationName": {
+      "tr": "Malazgirt / Muş",
+      "en": "Malazgirt / Mus, Turkey"
+    },
+    "coordinates": [39.1458, 42.5428],
+    "summary": {
+      "tr": "Büyük Selçuklu Hükümdarı Alparslan'ın Bizans ordusunu mağlup ederek Anadolu'nun kapılarını Türklere açtığı savaş.",
+      "en": "The decisive battle where Seljuk Sultan Alp Arslan defeated the Byzantine army, opening the gates of Anatolia to Turks."
+    },
+    "fullText": {
+      "tr": "Sayıca üstün Bizans ordusu, Selçuklu süvarilerinin uyguladığı Turan taktiği (sahte geri çekilme) ile çember içine alınarak imha edildi. İmparator Romen Diyojen esir düştü ve Anadolu'da kalıcı Türk yerleşimi başladı.",
+      "en": "The numerically superior Byzantine army was encircled and destroyed using the traditional feigned retreat tactic by Seljuk cavalry. Emperor Romanos IV was captured, initiating permanent Turkish settlement in Anatolia."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-003",
+    "title": {
+      "tr": "İstanbul'un Fethi",
+      "en": "Conquest of Constantinople"
+    },
+    "date": "29-05-1453",
+    "locationName": {
+      "tr": "Fatih / İstanbul",
+      "en": "Fatih / Istanbul, Turkey"
+    },
+    "coordinates": [41.0082, 28.9784],
+    "summary": {
+      "tr": "II. Mehmed komutasındaki Osmanlı ordusunun Bizans İmparatorluğu'nun başkentini ele geçirerek Orta Çağ'ı sonlandırdığı fetih.",
+      "en": "The capture of the Byzantine capital by the Ottoman Empire under Sultan Mehmed II, marking the end of the Middle Ages."
+    },
+    "fullText": {
+      "tr": "53 günlük kuşatma, Şahi toplarının surları yıkması ve gemilerin karadan Haliç'e indirilmesi gibi askeri mühendislik başarılarıyla sonuçlandı. Fetih, Osmanlı Devleti'ni imparatorluğa dönüştürdü ve Rönesans tetikleyicilerinden biri oldu.",
+      "en": "The 53-day siege concluded with military engineering feats such as super-sized basilica cannons breaching the walls and warships transported overland into the Golden Horn. The conquest transformed the Ottoman state into an empire."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-004",
+    "title": {
+      "tr": "Büyük Taarruz ve Başkomutanlık Meydan Muharebesi",
+      "en": "Great Offensive and Battle of Dumlupinar"
+    },
+    "date": "26-08-1922",
+    "locationName": {
+      "tr": "Merkez / Afyonkarahisar",
+      "en": "Afyonkarahisar, Turkey"
+    },
+    "coordinates": [38.7569, 30.5386],
+    "summary": {
+      "tr": "Türk Kurtuluş Savaşı'nın kesin zaferiyle sonuçlanan ve işgal kuvvetlerinin Anadolu'dan çıkarılmasını sağlayan genel taarruz.",
+      "en": "The general offensive concluding with the decisive victory of the Turkish War of Independence, expelling occupying forces from Anatolia."
+    },
+    "fullText": {
+      "tr": "Mustafa Kemal Paşa'nın başkomutanlığında Kocatepe'den başlatılan baskın taarruzu, Yunan ana kuvvetlerinin Dumlupınar'da imha edilmesiyle sonuçlandı. Orduların 9 Eylül'de İzmir'e ulaşmasıyla Anadolu'daki askeri işgal sona erdi.",
+      "en": "Launched from Kocatepe under the commander-in-chief Mustafa Kemal Pasha, the surprise offensive resulted in the encirclement and destruction of the main Greek forces at Dumlupinar, ending the military occupation of Anatolia."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-005",
+    "title": {
+      "tr": "Göbeklitepe Tapınak Kompleksi",
+      "en": "Gobeklitepe Temple Complex"
+    },
+    "date": "01-01-[M.Ö. 9600]",
+    "locationName": {
+      "tr": "Haliliye / Şanlıurfa",
+      "en": "Haliliye / Sanliurfa, Turkey"
+    },
+    "coordinates": [37.2231, 38.9225],
+    "summary": {
+      "tr": "Tarihin bilinen en eski anıtsal tapınak kompleksi ve 'Tarihin Sıfır Noktası' olarak kabul edilen neolitik yerleşim.",
+      "en": "The world's oldest known monumental temple complex, recognized globally as the 'Zero Point of History'."
+    },
+    "fullText": {
+      "tr": "12.000 yıl öncesine tarihlenen T biçimli megalit dikili taşlar, avcı-toplayıcı toplulukların tarıma geçmeden önce organize bir inanç sistemi kurduğunu kanıtladı. Bu keşif, insanlık tarihi ve medeniyet kuramlarını temelden değiştirdi.",
+      "en": "Dating back 12,000 years, the T-shaped megalithic pillars proved that hunter-gatherer societies established organized belief systems before transitioning to agriculture, fundamentally altering theories of human civilization."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-006",
+    "title": {
+      "tr": "Mustafa Kemal'in Samsun'a Çıkışı",
+      "en": "Mustafa Kemal's Landing in Samsun"
+    },
+    "date": "19-05-1919",
+    "locationName": {
+      "tr": "İlkadım / Samsun",
+      "en": "Ilkadim / Samsun, Turkey"
+    },
+    "coordinates": [41.2867, 36.3300],
+    "summary": {
+      "tr": "9. Ordu Müfettişi Mustafa Kemal Paşa'nın Bandırma Vapuru ile Samsun'a ulaşarak Milli Mücadele'yi fiilen başlattığı gün.",
+      "en": "The day Mustafa Kemal Pasha arrived in Samsun aboard the SS Bandirma as the 9th Army Inspector, officially initiating the Turkish War of Independence."
+    },
+    "fullText": {
+      "tr": "Mondros Mütarekesi sonrası Anadolu'daki işgallere karşı ulusal direnişi organize etmek amacıyla yapılan stratejik intikaldir. Ulusal egemenliğe dayalı tam bağımsız Türk devleti kurma sürecinin ilk operasyonel adımıdır.",
+      "en": "A strategic deployment executed to organize national resistance against the occupations following the Armistice of Mudros. It marks the first operational step toward establishing a fully independent Turkish state based on national sovereignty."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-007",
+    "title": {
+      "tr": "Sivas Kongresi",
+      "en": "Sivas Congress"
+    },
+    "date": "04-09-1919",
+    "locationName": {
+      "tr": "Merkez / Sivas",
+      "en": "Central / Sivas, Turkey"
+    },
+    "coordinates": [39.7505, 37.0150],
+    "summary": {
+      "tr": "Tüm milli cemiyetlerin tek çatı altında birleştirildiği ve manda fikrinin kesin olarak reddedildiği ulusal kongre.",
+      "en": "The national congress where all regional defense organizations were united under one roof and foreign mandate was categorically rejected."
+    },
+    "fullText": {
+      "tr": "Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti kurularak Kurtuluş Savaşı tek bir merkezden yönetilmeye başlanmıştır. Temsil Heyeti yürütme organı olarak işlev görmüş, bağımsızlık iradesi kurumsallaşmıştır.",
+      "en": "The Association for the Defense of the Rights of Anatolia and Rumelia was established, centralizing the management of the War of Independence. The Representative Committee functioned as an executive body, institutionalizing the will for independence."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-008",
+    "title": {
+      "tr": "Amasya Genelgesi",
+      "en": "Amasya Circular"
+    },
+    "date": "22-06-1919",
+    "locationName": {
+      "tr": "Merkez / Amasya",
+      "en": "Central / Amasya, Turkey"
+    },
+    "coordinates": [40.6533, 35.8331],
+    "summary": {
+      "tr": "'Vatanın bütünlüğü, milletin bağımsızlığı tehlikededir' ilkesiyle Türk devriminin ihtilal bildirgesi niteliği taşıyan belge.",
+      "en": "The revolutionary declaration of the Turkish independence movement stating 'The integrity of the homeland and independence of the nation are in peril'."
+    },
+    "fullText": {
+      "tr": "Milletin bağımsızlığını yine milletin azim ve kararının kurtaracağı vurgulanarak ilk kez ulusal egemenlik ilkesine işaret edilmiştir. İstanbul Hükümeti'nin görevini yerine getiremediği açıkça ilan edilmiştir.",
+      "en": "By declaring that the independence of the nation would be saved by the resolve and decision of the nation itself, it signaled the principle of national sovereignty for the first time while openly rejecting the authority of the Istanbul Government."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-009",
+    "title": {
+      "tr": "Çatalhöyük Neolitik Kenti",
+      "en": "Catalhoyuk Neolithic City"
+    },
+    "date": "01-01-[M.Ö. 7400]",
+    "locationName": {
+      "tr": "Çumra / Konya",
+      "en": "Cumra / Konya, Turkey"
+    },
+    "coordinates": [37.6675, 32.8283],
+    "summary": {
+      "tr": "İnsanlık tarihinin ilk kentsel yerleşim yerlerinden biri ve tarım toplumuna geçişin en önemli arkeolojik kanıtı.",
+      "en": "One of the earliest urban settlements in human history and a critical archaeological proof of the transition to agrarian society."
+    },
+    "fullText": {
+      "tr": "Sokaksız mimarisi ve damlardan girilen bitişik düzenli kerpiç konutlarıyla dikkat çeker. Eşitlikçi bir toplumsal yapının, erken dönem duvar resimlerinin ve evcilleştirme faaliyetlerinin küresel ölçekteki merkezidir.",
+      "en": "Renowned for its streetless architecture featuring clustered mudbrick houses accessed through roof openings. It stands as a global center for egalitarian social structure, early wall frescoes, and animal domestication."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1590086782957-93c06ef21604?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-010",
+    "title": {
+      "tr": "Hattuşaş: Hitit İmparatorluğu Başkenti",
+      "en": "Hattusa: Capital of the Hittite Empire"
+    },
+    "date": "01-01-[M.Ö. 1650]",
+    "locationName": {
+      "tr": "Boğazkale / Çorum",
+      "en": "Bogazkale / Corum, Turkey"
+    },
+    "coordinates": [40.0197, 34.6153],
+    "summary": {
+      "tr": "Anadolu'nun ilk merkezi devletini kuran Hitit İmparatorluğu'nun surlar ve anıtsal kapılarla çevrili başkenti.",
+      "en": "The fortified capital of the Hittite Empire, which established the first centralized state in Anatolia."
+    },
+    "fullText": {
+      "tr": "Aslanlı Kapı ve Yazılıkaya Açık Hava Tapınağı ile dönemin gelişmiş mühendislik örneklerini sunar. Tarihin bilinen ilk yazılı barış antlaşması olan Kadeş Antlaşması'nın kil tablet kopyaları bu arama sahasında bulunmuştur.",
+      "en": "Showcases advanced Bronze Age engineering with the Lion Gate and Yazilikaya Open Air Shrine. Clay tablet copies of the Treaty of Kadesh, the world's earliest known written peace treaty, were unearthed in its state archives."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-011",
+    "title": {
+      "tr": "Truva Antik Kenti ve Truva Savaşı",
+      "en": "Ancient City of Troy and Trojan War"
+    },
+    "date": "01-01-[M.Ö. 1200]",
+    "locationName": {
+      "tr": "Merkez / Çanakkale",
+      "en": "Central / Canakkale, Turkey"
+    },
+    "coordinates": [39.9575, 26.2389],
+    "summary": {
+      "tr": "Homeros'un İlyada Destanı'na konu olan, 9 farklı katmanıyla 4.000 yıllık kesintisiz yerleşim tarihine sahip efsanevi kent.",
+      "en": "The legendary city of Homer's Iliad, possessing a 4,000-year continuous settlement history across 9 distinct archaeological layers."
+    },
+    "fullText": {
+      "tr": "Erken Tunç Çağı'ndan Bizans dönemine kadar üst üste kurulan katmanlar, kentin boğaz ticaretindeki stratejik önemini kanıtlar. Kazılar, mitolojik anlatıların arkasındaki tunç çağı ticaret merkezi gerçeğini ortaya çıkarmıştır.",
+      "en": "Layers built continuously from the Early Bronze Age to the Byzantine era prove the city's strategic dominance over strait trade routes. Excavations revealed the historical Bronze Age trade hub behind the mythology."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": true,
+    "sponsorDetails": {
+      "name": "Ege Kültür Mirası Vakfı",
+      "logo": "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?auto=format&fit=crop&w=200&q=80",
+      "url": "https://www.example.com"
+    }
+  },
+  {
+    "id": "evt-012",
+    "title": {
+      "tr": "Sardes ve Paranın İcadı",
+      "en": "Sardis and the Invention of Coinage"
+    },
+    "date": "01-01-[M.Ö. 700]",
+    "locationName": {
+      "tr": "Salihli / Manisa",
+      "en": "Salihli / Manisa, Turkey"
+    },
+    "coordinates": [38.4883, 28.0403],
+    "summary": {
+      "tr": "Lydia Krallığı'nın başkenti olan ve tarihte ilk madeni paranın (sikke) basılarak küresel ticarette devrim yarattığı merkez.",
+      "en": "The capital of the Lydian Kingdom where the world's first metallic coins were minted, revolutionizing global trade."
+    },
+    "fullText": {
+      "tr": "Paktolos Çayı'nın alüvyonlarındaki altın madenini işleyen Lydialılar, elektron alaşımından ilk sikkeleri basmıştır. Kral Yolu'nun başlangıcı olan Sardes, antik dünyanın en büyük ticaret ve rafinasyon merkezi olmuştur.",
+      "en": "By refining gold alluvial deposits from the Pactolus River, the Lydians minted the earliest coins from electrum alloy. Starting point of the Royal Road, Sardis became the ancient world's foremost financial and trade hub."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1589802829985-817e51171b92?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-013",
+    "title": {
+      "tr": "Efes Antik Kenti ve Celsus Kütüphanesi",
+      "en": "Ancient City of Ephesus and Celsus Library"
+    },
+    "date": "01-01-[M.Ö. 100]",
+    "locationName": {
+      "tr": "Selçuk / İzmir",
+      "en": "Selcuk / Izmir, Turkey"
+    },
+    "coordinates": [37.9408, 27.3414],
+    "summary": {
+      "tr": "Klasik Yunan ve Roma dönemlerinin en önemli liman metropolü ve Artemis Tapınağı'na ev sahipliği yapan kültür başkenti.",
+      "en": "The premier port metropolis of Greco-Roman antiquity and cultural capital hosting the Temple of Artemis."
+    },
+    "fullText": {
+      "tr": "Roma'nın Asya Eyaleti başkenti konumundaki kent, 25.000 kişilik tiyatrosu ve anıtsal Celsus Kütüphanesi ile mimari zirveyi temsil eder. Küçük Menderes nehrinin alüvyonlarıyla limanının dolması sonucu gerilemiştir.",
+      "en": "As the capital of Rome's Province of Asia, it represented an architectural zenith with its 25,000-seat theater and monumental Celsus Library. The city declined after its harbor silted up from the Kucuk Menderes river."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-014",
+    "title": {
+      "tr": "Nemrut Dağı Kommagene Tapınağı",
+      "en": "Mount Nemrut Commagene Sanctuary"
+    },
+    "date": "01-01-[M.Ö. 62]",
+    "locationName": {
+      "tr": "Kahta / Adıyaman",
+      "en": "Kahta / Adiyaman, Turkey"
+    },
+    "coordinates": [38.0053, 38.7433],
+    "summary": {
+      "tr": "Kommagene Kralı I. Antiochos'un 2.150 metre rakımlı dağ zirvesine yaptırdığı anıtsal dev heykeller ve tümülüs kompleksi.",
+      "en": "The monumental limestone statues and tumulus complex constructed by Commagene King Antiochus I at an altitude of 2,150 meters."
+    },
+    "fullText": {
+      "tr": "Doğu ve Batı kültürlerini (Pers ve Grego-Romen panteonunu) sentezleyen Antiochos, kendi mezar anıtını kırma taşlardan oluşan 50 metrelik tümülüsün altına gizlemiştir. Dev tanrı heykelleri UNESCO koruması altındadır.",
+      "en": "Synthesizing Eastern and Western cultures (Persian and Greco-Roman pantheons), Antiochus concealed his tomb beneath a 50-meter tumulus of crushed rock. The colossal god statues are protected under UNESCO World Heritage."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-015",
+    "title": {
+      "tr": "Sümela Manastırı İnşası",
+      "en": "Construction of Sumela Monastery"
+    },
+    "date": "01-01-[M.S. 386]",
+    "locationName": {
+      "tr": "Maçka / Trabzon",
+      "en": "Macka / Trabzon, Turkey"
+    },
+    "coordinates": [40.6900, 39.6583],
+    "summary": {
+      "tr": "Karadağ'ın sarp kayalıklarına 300 metre yükseklikte inşa edilen, Rum Ortodoks mimarisinin anıtsal manastır kompleksi.",
+      "en": "The monumental cliff-face monastery complex of Greek Orthodox architecture perched 300 meters high on the slopes of Karadag."
+    },
+    "fullText": {
+      "tr": "Su kemerleri, kütüphanesi ve fresklerle kaplı Ana Kaya Kilisesi'nden oluşan yapı, dik bir uçuruma entegre edilmiştir. Trabzon İmparatorluğu ve Osmanlı döneminde özel imtiyazlarla korunmuştur.",
+      "en": "Comprising aqueducts, a library, and the fresco-covered Rock Church, the structure is masterfully integrated into a sheer cliff. It preserved its status through special charters during the Trabzon and Ottoman empires."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1584646098378-0874589d76b1?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": true,
+    "sponsorDetails": {
+      "name": "Karadeniz Turizm ve Tarih Derneği",
+      "logo": "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?auto=format&fit=crop&w=200&q=80",
+      "url": "https://www.example.com"
+    }
+  },
+  {
+    "id": "evt-016",
+    "title": {
+      "tr": "Ayasofya'nın İnşası ve İbadete Açılması",
+      "en": "Construction and Dedication of Hagia Sophia"
+    },
+    "date": "27-12-0537",
+    "locationName": {
+      "tr": "Fatih / İstanbul",
+      "en": "Fatih / Istanbul, Turkey"
+    },
+    "coordinates": [41.0086, 28.9802],
+    "summary": {
+      "tr": "Bizans İmparatoru I. Justinianus tarafından 5 yılda inşa edilen dünya mimarlık tarihinin en büyük kubbeli şaheserlerinden biri.",
+      "en": "One of the greatest domed masterpieces in world architectural history, constructed in just 5 years by Byzantine Emperor Justinian I."
+    },
+    "fullText": {
+      "tr": "Miletli İsidoros ve Trallesli Anthemius'un tasarladığı anıtsal kubbe mimarisi, yüzyıllar boyunca geniş açıklıkların örtülmesi konusunda referans olmuştur. Hem Bizans hem Osmanlı imparatorluklarının meşruiyet sembolüdür.",
+      "en": "Designed by Isidore of Miletus and Anthemius of Tralles, its monumental dome architecture served as the primary reference for spanning large spaces for centuries. It stands as a symbol of legitimacy for both Byzantine and Ottoman empires."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-017",
+    "title": {
+      "tr": "Ani Harabeleri ve Anadolu'daki İlk Türk Camii",
+      "en": "Ruins of Ani and the First Turkish Mosque in Anatolia"
+    },
+    "date": "16-08-1064",
+    "locationName": {
+      "tr": "Merkez / Kars",
+      "en": "Central / Kars, Turkey"
+    },
+    "coordinates": [40.5075, 43.5728],
+    "summary": {
+      "tr": "İpek Yolu üzerindeki '1001 Kilise Şehri' Ani'nin Sultan Alparslan tarafından fethi ve Ebu'l Manûçehr Camii'nin inşası.",
+      "en": "The conquest of the Silk Road metropolis 'City of 1001 Churches' by Sultan Alp Arslan and the construction of Ebu'l Manucehr Mosque."
+    },
+    "fullText": {
+      "tr": "Orta Çağ'ın en büyük uluslararası ticaret ve kültür merkezlerinden biri olan kentin fethinin ardından inşa edilen Ebu'l Manûçehr Camii, Anadolu topraklarındaki ilk Türk-İslam cami mimarisi örneğidir.",
+      "en": "Following the capture of the metropolis, which was among the greatest international trade centers of the Middle Ages, the Ebu'l Manucehr Mosque was erected as the very first Turkish-Islamic mosque structure in Anatolia."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-17.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1548625361-16800b328a88?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-018",
+    "title": {
+      "tr": "Miryokefalon Meydan Muharebesi",
+      "en": "Battle of Myriokephalon"
+    },
+    "date": "17-09-1176",
+    "locationName": {
+      "tr": "Çivril / Denizli",
+      "en": "Civril / Denizli, Turkey"
+    },
+    "coordinates": [38.2833, 29.9000],
+    "summary": {
+      "tr": "Anadolu Selçuklu Sultanı II. Kılıç Arslan'ın Bizans ordusunu pusuya düşürerek Anadolu'nun tapusunu kesin olarak aldığı savaş.",
+      "en": "The battle where Seljuk Sultan Kilij Arslan II ambushed the Byzantine army, securing permanent Turkish sovereignty over Anatolia."
+    },
+    "fullText": {
+      "tr": "Bizans İmparatoru I. Manuel Komnenos'un Türkleri Anadolu'dan atma girişimi, Kumdanlı Vadisi'nde ağır bir hezimetle sonuçlandı. Bu zaferle Bizans'ın taarruz gücü tamamen kırılmış, savunma pozisyonuna geçilmiştir.",
+      "en": "Byzantine Emperor Manuel I Komnenos's campaign to expel Turks from Anatolia ended in a devastating ambush in the Kumdanli Valley. This victory broke offensive Byzantine capabilities permanently, forcing them into strategic defense."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-18.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-019",
+    "title": {
+      "tr": "Mevlâna Celâleddîn-i Rûmî ve Mesnevi",
+      "en": "Rumi and the Masnavi"
+    },
+    "date": "17-12-[1273]",
+    "locationName": {
+      "tr": "Merkez / Konya",
+      "en": "Central / Konya, Turkey"
+    },
+    "coordinates": [37.8708, 32.5050],
+    "summary": {
+      "tr": "Türk-İslam tasavvufunun en büyük düşünürü Mevlâna'nın Konya'daki evrensel mirası ve Mevlevilik tarikatının temelleri.",
+      "en": "The universal heritage of Rumi, the foremost philosopher of Turkish-Islamic Sufism, and the foundational center of the Mevlevi Order."
+    },
+    "fullText": {
+      "tr": "Moğol istilasının yarattığı yıkım döneminde Mevlâna'nın hümanizm ve ilahi aşk odaklı öğretileri Anadolu'da toplumsal bütünleşmeyi sağlamıştır. 25.700 beyitlik Mesnevi, tasavvuf edebiyatının zirvesidir.",
+      "en": "During the devastation of the Mongol invasions, Rumi's teachings focused on humanism and divine love fostered social cohesion across Anatolia. His 25,700-verse masterwork, the Masnavi, represents the pinnacle of Sufi literature."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-19.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": true,
+    "sponsorDetails": {
+      "name": "Kültür Mirası Sergileri",
+      "logo": "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?auto=format&fit=crop&w=200&q=80",
+      "url": "https://www.example.com"
+    }
+  },
+  {
+    "id": "evt-020",
+    "title": {
+      "tr": "Bursa'nın Fethi ve İlk Başkent Olunması",
+      "en": "Conquest of Bursa and First Ottoman Capital"
+    },
+    "date": "06-04-1326",
+    "locationName": {
+      "tr": "Osmangazi / Bursa",
+      "en": "Osmangazi / Bursa, Turkey"
+    },
+    "coordinates": [40.1828, 29.0667],
+    "summary": {
+      "tr": "Orhan Gazi komutasındaki kuvvetlerin 23 yıl süren kuşatmanın ardından Bursa'yı fethederek beylikten devlete geçişi.",
+      "en": "The capture of Bursa by forces under Orhan Gazi after a 23-year siege, marking the transition from a principality to a state."
+    },
+    "fullText": {
+      "tr": "Stratejik abluka ve ikmal yollarının kesilmesiyle teslim alınan şehir, Osmanlı Devleti'nin ilk başkenti olmuştur. İlk saray teşkilatı, ilk gümüş sikke basımı ve erken dönem külliye mimarisi burada kurumsallaşmıştır.",
+      "en": "Captured through strategic blockade and severance of supply lines, the city became the first capital of the Ottoman State. The initial palace bureaucracy, first silver coin mintage, and early imperial complex architecture were institutionalized here."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-20.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-021",
+    "title": {
+      "tr": "Edirne'nin Fethi ve Rumeli Başkenti",
+      "en": "Conquest of Edirne and the Rumelian Capital"
+    },
+    "date": "01-01-[1361]",
+    "locationName": {
+      "tr": "Merkez / Edirne",
+      "en": "Central / Edirne, Turkey"
+    },
+    "coordinates": [41.6772, 26.5556],
+    "summary": {
+      "tr": "I. Murad döneminde fethedilen Edirne'nin başkent yapılarak Osmanlı'nın Avrupa yönündeki fetihlerinin operasyon üssü olması.",
+      "en": "The capture of Edirne under Sultan Murad I and its designation as capital, serving as the operational base for Ottoman European conquests."
+    },
+    "fullText": {
+      "tr": "Sazlıdere Savaşı ile Bizans kuvvetlerinin yenilgisinin ardından fethedilen kent, İstanbul'un fethine kadar 92 yıl başkentlik yapmıştır. Balkan fetihlerinin lojistik ve askeri merkezi olarak yeniden inşa edilmiştir.",
+      "en": "Captured following the defeat of Byzantine forces at the Battle of Sazlidere, the city served as capital for 92 years until the conquest of Istanbul. It was rebuilt as the primary logistical and military staging ground for Balkan expansions."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-21.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-022",
+    "title": {
+      "tr": "Ankara Savaşı ve Fetret Devri",
+      "en": "Battle of Ankara and the Ottoman Interregnum"
+    },
+    "date": "28-07-1402",
+    "locationName": {
+      "tr": "Çubuk / Ankara",
+      "en": "Cubuk / Ankara, Turkey"
+    },
+    "coordinates": [40.0967, 32.9833],
+    "summary": {
+      "tr": "Yıldırım Bayezid ile Timur arasında Çubuk Ovası'nda gerçekleşen ve Osmanlı Devleti'ni 11 yıllık parçalanma sürecine sokan savaş.",
+      "en": "The major clash between Sultan Bayezid I and Timur on the Cubuk Plain that plunged the Ottoman State into an 11-year civil war."
+    },
+    "fullText": {
+      "tr": "Timur'un taktik üstünlüğü ve filleri etkili kullanması sonucu Osmanlı ordusu mağlup olmuştur. Padişahın esir düşmesiyle Anadolu Türk siyasi birliği dağılmış, 11 yıl sürecek taht kavgaları dönemi başlamıştır.",
+      "en": "The Ottoman army was defeated due to Timur's tactical superiority and effective deployment of war elephants. The capture of the Sultan shattered Anatolian Turkish political unity, initiating an 11-year interregnum of dynastic civil war."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-22.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-023",
+    "title": {
+      "tr": "Otlukbeli Muharebesi",
+      "en": "Battle of Otlukbeli"
+    },
+    "date": "11-08-1473",
+    "locationName": {
+      "tr": "Tercan / Erzincan",
+      "en": "Tercan / Erzincan, Turkey"
+    },
+    "coordinates": [39.9667, 40.0000],
+    "summary": {
+      "tr": "Fatih Sultan Mehmed ile Akkoyunlu Hükümdarı Uzun Hasan arasında gerçekleşen, ateşli silahların üstünlük sağladığı meydan savaşı.",
+      "en": "The decisive field battle between Mehmed the Conqueror and Akkoyunlu ruler Uzun Hasan, won through advanced Ottoman firearms."
+    },
+    "fullText": {
+      "tr": "Osmanlı ordusu, gelişmiş havan topları ve tüfekli yeniçeri birlikleri sayesinde klasik konvansiyonel süvari ordusuna sahip Akkoyunluları mağlup etmiştir. Bu zaferle Doğu Anadolu sınırlarının güvenliği sağlanmıştır.",
+      "en": "Utilizing advanced field mortars and musket-wielding Janissaries, the Ottoman army defeated the conventional cavalry forces of the Akkoyunlu Empire, permanently securing the eastern frontiers of Anatolia."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-23.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-024",
+    "title": {
+      "tr": "Çaldıran Muharebesi",
+      "en": "Battle of Chaldiran"
+    },
+    "date": "23-08-1514",
+    "locationName": {
+      "tr": "Çaldıran / Van",
+      "en": "Caldiran / Van, Turkey"
+    },
+    "coordinates": [39.0833, 43.9167],
+    "summary": {
+      "tr": "Yavuz Sultan Selim komutasındaki Osmanlı ordusunun Şah İsmail komutasındaki Safevi ordusunu mağlup ettiği stratejik zafer.",
+      "en": "The strategic victory where Ottoman Sultan Selim I defeated the Safavid army led by Shah Ismail I in eastern Anatolia."
+    },
+    "fullText": {
+      "tr": "Lojistik organizasyon ve ateşli silah gücünü mükemmel kullanan Yavuz Sultan Selim, Safevi tehdidini ortadan kaldırmıştır. Zafer, Tebriz ve Doğu Anadolu'nun Osmanlı idaresine geçmesini sağlayarak Mısır seferinin yolunu açmıştır.",
+      "en": "Leveraging superior logistics and gunpowder artillery, Selim I neutralized the Safavid threat. The victory integrated Tabriz and Eastern Anatolia into Ottoman administration, paving the way for the subsequent Egyptian campaign."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-24.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": true,
+    "sponsorDetails": {
+      "name": "Tarih ve Doğu Arşivleri",
+      "logo": "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?auto=format&fit=crop&w=200&q=80",
+      "url": "https://www.example.com"
+    }
+  },
+  {
+    "id": "evt-025",
+    "title": {
+      "tr": "Süleymaniye Camii ve Külliyesi İnşası",
+      "en": "Construction of Suleymaniye Mosque Complex"
+    },
+    "date": "01-01-[1557]",
+    "locationName": {
+      "tr": "Fatih / İstanbul",
+      "en": "Fatih / Istanbul, Turkey"
+    },
+    "coordinates": [41.0161, 28.9639],
+    "summary": {
+      "tr": "Kanuni Sultan Süleyman adına Mimar Sinan tarafından 7 yılda inşa edilen, Osmanlı mimarisinin kalfalık eseri şaheseri.",
+      "en": "The architectural masterpiece constructed by Mimar Sinan in 7 years for Suleiman the Magnificent, defining the Ottoman skyline."
+    },
+    "fullText": {
+      "tr": "Mimar Sinan'ın akustik, statik ve hava sirkülasyonu mühendisliğinde zirveye ulaştığı anıtsal komplekstir. Medreseler, hastane, kütüphane ve imaretten oluşan yapı, Klasik Osmanlı mimarisinin en önemli sembolüdür.",
+      "en": "A monumental complex where Mimar Sinan reached the pinnacle of structural acoustics, statics, and air circulation engineering. Comprising madrasas, a hospital, library, and soup kitchen, it symbolizes Classical Ottoman architecture."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-25.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-026",
+    "title": {
+      "tr": "Erzurum Kongresi",
+      "en": "Erzurum Congress"
+    },
+    "date": "23-07-1919",
+    "locationName": {
+      "tr": "Yakutiye / Erzurum",
+      "en": "Yakutiye / Erzurum, Turkey"
+    },
+    "coordinates": [39.9056, 41.2658],
+    "summary": {
+      "tr": "Milli Mücadele'nin temel ilkelerinin belirlendiği, 'Milli sınırlar içinde vatan bir bütündür, parçalanamaz' kararının alındığı kongre.",
+      "en": "The congress establishing the core principles of the independence struggle, declaring 'The homeland is an indivisible whole within its national borders'."
+    },
+    "fullText": {
+      "tr": "Mustafa Kemal Paşa'nın sivil delege ve başkan olarak yönettiği kongre, toplanış biçimi bakımından bölgesel, aldığı kararlar bakımından ulusal niteliktedir. Tam bağımsızlık ilkesi ve Misa-ı Milli'nin temelleri burada atılmıştır.",
+      "en": "Chaired by Mustafa Kemal Pasha as a civilian delegate, the congress was regional in assembly but strictly national in its decisions. It laid the foundation for the National Pact (Misak-i Milli) and uncompromising absolute independence."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-26.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-027",
+    "title": {
+      "tr": "TBMM'nin Açılışı",
+      "en": "Opening of the Grand National Assembly"
+    },
+    "date": "23-04-1920",
+    "locationName": {
+      "tr": "Ulus / Ankara",
+      "en": "Ulus / Ankara, Turkey"
+    },
+    "coordinates": [39.9422, 32.8544],
+    "summary": {
+      "tr": "Ulusal egemenliğe dayalı yeni Türk devletinin temellerinin atıldığı ve Birinci Meclis'in çalışmalarına başladığı gün.",
+      "en": "The historic opening of the First Parliament in Ankara, laying the foundations of the new Turkish state based on national sovereignty."
+    },
+    "fullText": {
+      "tr": "İstanbul'un işgali üzerine Ankara'da olağanüstü yetkilerle toplanan kurucu meclistir. 'Egemenlik kayıtsız şartsız milletindir' ilkesini benimseyerek Kurtuluş Savaşı'nı hem yasama hem yürütme organı olarak doğrudan yönetmiştir.",
+      "en": "Convened in Ankara with extraordinary powers following the occupation of Istanbul. Adopting the principle 'Sovereignty belongs unconditionally to the nation', it directly directed the War of Independence as both legislative and executive body."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-27.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": true,
+    "sponsorDetails": {
+      "name": "Milli Egemenlik Vakfı",
+      "logo": "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?auto=format&fit=crop&w=200&q=80",
+      "url": "https://www.example.com"
+    }
+  },
+  {
+    "id": "evt-028",
+    "title": {
+      "tr": "Sakarya Meydan Muharebesi",
+      "en": "Battle of Sakarya"
+    },
+    "date": "23-08-1921",
+    "locationName": {
+      "tr": "Polatlı / Ankara",
+      "en": "Polatli / Ankara, Turkey"
+    },
+    "coordinates": [39.5833, 32.1333],
+    "summary": {
+      "tr": "22 gün 22 gece süren, Türk ordusunun 1683'ten beri devam eden geri çekilişini durduran stratejik savunma savaşı.",
+      "en": "The 22-day pitch battle halting the continuous retreat of Turkish armies dating back to 1683, known as the 'Officer's Battle'."
+    },
+    "fullText": {
+      "tr": "Başkomutan Mustafa Kemal Paşa'nın 'Hatt-ı müdafaa yoktur, sath-ı müdafaa vardır' emriyle harp tarihine alan savunması doktrinini kazandırmıştır. Yunan ordusunun taarruz gücü tükenmiş, inisiyatif Türk tarafına geçmiştir.",
+      "en": "Introduced the doctrine of area defense to military history with Commander-in-Chief Mustafa Kemal Pasha's order: 'There is no line of defense, but a surface of defense'. Greek offensive capabilities were exhausted, shifting initiative to Turkish forces."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-28.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-029",
+    "title": {
+      "tr": "Cumhuriyet'in İlanı",
+      "en": "Proclamation of the Republic"
+    },
+    "date": "29-10-1923",
+    "locationName": {
+      "tr": "Ulus (I. TBMM Binası) / Ankara",
+      "en": "Ulus / Ankara, Turkey"
+    },
+    "coordinates": [39.9231, 32.8528],
+    "summary": {
+      "tr": "Türk milletinin yönetim biçiminin 'Cumhuriyet' olarak kanunlaştırıldığı ve Gazi Mustafa Kemal'in ilk Cumhurbaşkanı seçildiği milat.",
+      "en": "The constitutional amendment officially establishing 'Republic' as the government form and electing Gazi Mustafa Kemal as first President."
+    },
+    "fullText": {
+      "tr": "1921 Teşkilat-ı Esasiye Kanunu'nda yapılan değişiklikle devletin rejim ve devlet başkanlığı sorunu kesin çözüme kavuşturulmuştur. Modern, laik ve demokratik devrimlerin önü açılarak egemenlik kurumsallaştırılmıştır.",
+      "en": "Through amendments to the 1921 Constitution, debates regarding the regime type and head of state were permanently resolved. This institutionalized popular sovereignty and paved the way for modern, secular, and democratic reforms."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-29.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": false,
+    "sponsorDetails": null
+  },
+  {
+    "id": "evt-030",
+    "title": {
+      "tr": "Hatay'ın Anavatana Katılması",
+      "en": "Annexation of Hatay State to Turkey"
+    },
+    "date": "23-07-1939",
+    "locationName": {
+      "tr": "Antakya / Hatay",
+      "en": "Antakya / Hatay, Turkey"
+    },
+    "coordinates": [36.2000, 36.1667],
+    "summary": {
+      "tr": "Atatürk'ün 'Şahsi meselem' dediği Hatay'ın, barışçıl diplomasi ve referandum sonucu Türkiye Cumhuriyeti'ne katılması.",
+      "en": "The peaceful integration of the Hatay State into the Republic of Turkey via diplomacy and parliamentary vote, fulfilling Ataturk's vision."
+    },
+    "fullText": {
+      "tr": "1938'de bağımsız devlet olarak kurulan Hatay, meclisinin aldığı kararla Türkiye'ye ilhak etmiştir. II. Dünya Savaşı öncesi Türkiye'nin güney sınırlarını güvenceye alan bu adım, stratejik bir diplomatik zaferdir.",
+      "en": "Established as an independent state in 1938, the Hatay parliament voted unanimously to merge with Turkey. This step secured Turkey's southern borders prior to World War II, marking a masterclass in peaceful diplomatic strategy."
+    },
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-30.mp3",
+    "imageUrl": "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=800&q=80",
+    "sponsorAd": true,
+    "sponsorDetails": {
+      "name": "Akdeniz Diplomatik Araştırmalar Center",
+      "logo": "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?auto=format&fit=crop&w=200&q=80",
+      "url": "https://www.example.com"
+    }
+  },
+    {
+        "id": "soke_01_ancient",
+        "coordinates": [37.6594, 27.2978],
+        "date": "MÖ 5000 - MÖ 300",
+        "title": {
+            "tr": "Antik Çağ ve Priene'nin Altın Çağı",
+            "en": "Ancient Age and the Golden Age of Priene"
+        },
+        "city": {
+            "tr": "Aydın",
+            "en": "Aydın"
+        },
+        "locationName": {
+            "tr": "Söke (Priene)",
+            "en": "Söke (Priene)"
+        },
+        "summary": {
+            "tr": "Geç Bronz Çağı'nda Arzava halkına ev sahipliği yapan bölge, İyonlar döneminde Priene gibi öncü antik kentlerle zirveye ulaştı.",
+            "en": "Home to the Arzava people in the Late Bronze Age, the region reached its peak during the Ionian period with pioneering ancient cities like Priene."
+        },
+        "fullText": {
+            "tr": "Söke ve çevresinde ilk yerleşim izleri MÖ 5000'lere, Geç Bronz Çağı'na ve Arzava halkına dayanmaktadır. Bölge asıl altın çağını İyonlar döneminde yaşamıştır. 12 İyon devletinden biri olan ve şehir planlamacılığının (Izgara Sistemi / Hippodamik Plan) ilk örneklerinden sayılan Priene Antik Kenti bu dönemde kurulmuş, Akdeniz ticaretinin ve felsefenin önemli merkezlerinden biri olmuştur.",
+            "en": "The first traces of settlement in and around Söke date back to 5000 BC, the Late Bronze Age, and the Arzava people. The region experienced its true golden age during the Ionian period. Priene Ancient City, one of the 12 Ionian states and considered one of the earliest examples of urban planning (Grid System / Hippodamian Plan), was established during this era and became a major center of Mediterranean trade and philosophy."
+        },
+        "imageUrl": "https://images.unsplash.com/photo-1590086782957-93c06ef21604?q=80&w=1000&auto=format&fit=crop",
+        "audioUrl": "",
+        "sponsorAd": false
+    },
+    {
+        "id": "soke_02_turkish_era",
+        "coordinates": [37.7525, 27.4083],
+        "date": "1300'ler",
+        "title": {
+            "tr": "Aydınoğulları ve Türk Egemenliği",
+            "en": "Aydınoğulları Principality and Turkish Sovereignty"
+        },
+        "city": {
+            "tr": "Aydın",
+            "en": "Aydın"
+        },
+        "locationName": {
+            "tr": "Söke",
+            "en": "Söke"
+        },
+        "summary": {
+            "tr": "Bizans'ın gerilemesiyle Aydın Bey ve Süleyman Şah öncülüğündeki Türkmen aşiretlerinin yerleşmesi sonucu bölge kalıcı bir Türk yurdu haline geldi.",
+            "en": "With the decline of Byzantium, the region became a permanent Turkish homeland through the settlement of Turkmen tribes led by Aydın Bey and Süleyman Şah."
+        },
+        "fullText": {
+            "tr": "Bizans İmparatorluğu'nun bölgedeki hakimiyetinin zayıflamasının ardından, 1300'lü yıllarda Menteşe ve Aydınoğulları beyliklerinin fetihleri başladı. Aydın Bey'in bölgeyi ele geçirmesi ve ardından Süleyman Şah öncülüğündeki Türkmen aşiretlerinin (özellikle Sökle / Sıla aşiretinin) buraya yoğun olarak yerleşmesiyle ilçe, demografik ve idari olarak kalıcı bir Türk yurdu kimliği kazandı.",
+            "en": "Following the weakening of Byzantine rule in the region, the conquests of the Menteşe and Aydınoğulları principalities began in the 1300s. With Aydın Bey capturing the area and the subsequent intensive settlement of Turkmen tribes (especially the Sökle tribe) led by Süleyman Şah, the district gained a permanent Turkish homeland identity demographically and administratively."
+        },
+        "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=1000&auto=format&fit=crop",
+        "audioUrl": "",
+        "sponsorAd": false
+    },
+    {
+        "id": "soke_03_ottoman_sanjak",
+        "coordinates": [37.7560, 27.4020],
+        "date": "17. - 18. Yüzyıl",
+        "title": {
+            "tr": "Sığla Sancağı ve Osmanlı Yönetimi",
+            "en": "Sığla Sanjak and Ottoman Administration"
+        },
+        "city": {
+            "tr": "Aydın",
+            "en": "Aydın"
+        },
+        "locationName": {
+            "tr": "Söke",
+            "en": "Söke"
+        },
+        "summary": {
+            "tr": "18. yüzyıl başlarında Sığla sancağının merkezi olan Söke, idari ve ticari önemini artırarak Aydın livasına bağlı önemli bir kaza oldu.",
+            "en": "Becoming the center of the Sığla sanjak in the early 18th century, Söke increased its administrative and commercial importance as a major district of Aydın liva."
+        },
+        "fullText": {
+            "tr": "Osmanlı İmparatorluğu döneminde stratejik konumunu koruyan Söke, 17. ve 18. yüzyıllarda Ege'nin önemli idari merkezlerinden biri olarak öne çıktı. 18. yüzyılın başlarında Sığla sancağının merkezi haline getirildi. Körfez ticareti ve verimli Menderes arazillerinin sağladığı vergi gelirleriyle ekonomik gücünü artıran ilçe, daha sonraki düzenlemelerle Aydın livasına bağlı idari bir kaza statüsüyle yönetildi.",
+            "en": "Maintaining its strategic position during the Ottoman Empire, Söke rose to prominence as one of the Egean's key administrative centers in the 17th and 18th centuries. In the early 18th century, it became the capital of the Sığla sanjak. Increasing its economic power through gulf trade and tax revenues from the fertile Menderes lands, the town was later administered as a district (kaza) bound to the Aydın liva."
+        },
+        "imageUrl": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=1000&auto=format&fit=crop",
+        "audioUrl": "",
+        "sponsorAd": false
+    },
+    {
+        "id": "soke_04_izmir_connection",
+        "coordinates": [37.7480, 27.4100],
+        "date": "1864",
+        "title": {
+            "tr": "Sığla Sancağı'nın İzmir'e Bağlanması",
+            "en": "Attachment of Sığla Sanjak to İzmir"
+        },
+        "city": {
+            "tr": "Aydın",
+            "en": "Aydın"
+        },
+        "locationName": {
+            "tr": "Söke",
+            "en": "Söke"
+        },
+        "summary": {
+            "tr": "1864 Vilayet Nizamnamesi ve Sığla sancağı merkezinin İzmir'e taşınmasıyla Söke, resmi olarak İzmir'e bağlı bir ilçe statüsü kazandı.",
+            "en": "With the 1864 Provincial Regulation and the relocation of the Sığla sanjak center to İzmir, Söke officially became a district bound to İzmir."
+        },
+        "fullText": {
+            "tr": "Osmanlı idari sisteminde yapılan modernizasyon çalışmaları ve 1864 Vilayet Nizamnamesi kapsamında Ege Bölgesi'ndeki yönetsel sınırlar yeniden düzenlendi. Sığla sancağı merkezinin artan liman ticareti ve demiryolu hatları nedeniyle İzmir'e taşınmasının ardından Söke, idari olarak doğrudan İzmir vilayetine bağlı bir ilçe statüsü alarak bölgedeki lojistik ve ticari ağlara entegre oldu.",
+            "en": "Within the scope of Ottoman administrative modernization and the 1864 Provincial Regulation, administrative boundaries in the Aegean Region were restructured. Following the relocation of the Sığla sanjak center to İzmir due to growing port trade and railway networks, Söke directly became a district of the İzmir province, integrating deeply into the regional logistics and trade networks."
+        },
+        "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=1000&auto=format&fit=crop",
+        "audioUrl": "",
+        "sponsorAd": false
+    },
+    {
+        "id": "soke_05_liberation",
+        "coordinates": [37.7450, 27.3980],
+        "date": "1919 - 6 Eylül 1922",
+        "title": {
+            "tr": "Milli Mücadele ve Söke'nin Kurtuluşu",
+            "en": "National Struggle and Liberation of Söke"
+        },
+        "city": {
+            "tr": "Aydın",
+            "en": "Aydın"
+        },
+        "locationName": {
+            "tr": "Söke",
+            "en": "Söke"
+        },
+        "summary": {
+            "tr": "Milli Mücadele döneminde 3 kez Yunan işgaline uğrayan Söke, 6 Eylül 1922'de nihai düşman işgalinden kurtularak özgürlüğüne kavuştu.",
+            "en": "Occupied 3 times by Greeks during the National Struggle, Söke regained its freedom by being liberated from final enemy occupation on September 6, 1922."
+        },
+        "fullText": {
+            "tr": "I. Dünya Savaşı sonrasında Anadolu'nun işgali sürecinde Söke, büyük acılara ve stratejik direnişlere sahne oldu. Bölge toplamda 3 kez Yunan işgaline uğradı ve bir dönem İtalyan kıtaları tarafından denetlendi. 21 Nisan 1922'de İtalyan işgalinin sona ermesi ve Türk ordusunun Büyük Taarruz ile başlattığı kesin zafer yürüyüşü neticesinde Söke, 6 Eylül 1922 tarihinde nihai düşman işgalinden tamamen kurtarıldı.",
+            "en": "During the occupation of Anatolia following World War I, Söke witnessed great suffering and strategic resistance. The region was occupied 3 times by Greek forces and controlled by Italian troops for a period. Following the end of the Italian occupation on April 21, 1922, and the decisive advance of the Turkish army initiated by the Great Offensive, Söke was completely liberated from final enemy occupation on September 6, 1922."
+        },
+        "imageUrl": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=1000&auto=format&fit=crop",
+        "audioUrl": "",
+        "sponsorAd": false
+    },
+    {
+        "id": "soke_06_modern_agriculture",
+        "coordinates": [37.7300, 27.3800],
+        "date": "1950'ler Sonrası - 1963",
+        "title": {
+            "tr": "Tarım Endüstrisi ve Modern Yükseliş",
+            "en": "Agricultural Industry and Modern Rise"
+        },
+        "city": {
+            "tr": "Aydın",
+            "en": "Aydın"
+        },
+        "locationName": {
+            "tr": "Söke",
+            "en": "Söke"
+        },
+        "summary": {
+            "tr": "Pamuk tarımı ve 1963'te kurulan Söke Un gibi öncü sanayi hamleleriyle ilçe, Ege'nin en güçlü agro-endüstri merkezlerinden biri oldu.",
+            "en": "With cotton farming and pioneering industrial ventures like Söke Un founded in 1963, the district became one of the Aegean's strongest agro-industrial hubs."
+        },
+        "fullText": {
+            "tr": "Cumhuriyetin ilanıyla birlikte Aşağı Büyük Menderes Havzası'nda başlatılan bataklık kurutma ve taşkın koruma projeleri, Söke Ovası'nda tarımsal bir devrim yarattı. 1950'ler sonrasında makinalı tarıma geçilmesiyle 'Beyaz Altın' olarak bilinen pamuk üretiminde Türkiye'nin başkenti haline gelen ilçe; 1963 yılında temelleri atılan Söke Un gibi entegre sanayi yatırımlarıyla tarımsal üretimi endüstriyle birleştirerek bölgesel bir ekonomik merkeze dönüştü.",
+            "en": "Marsh drainage and flood protection projects initiated in the Lower Büyük Menderes Basin following the declaration of the Republic created an agricultural revolution in the Söke Plain. Becoming Turkey's capital in cotton production ('White Gold') with the mechanization of agriculture after the 1950s, the town transformed into a regional economic powerhouse by merging agricultural production with industry through integrated investments such as Söke Un, founded in 1963."
+        },
+        "imageUrl": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1000&auto=format&fit=crop",
+        "audioUrl": "",
+        "sponsorAd": false
+    }
+]
+  
